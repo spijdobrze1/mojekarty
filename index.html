@@ -312,6 +312,50 @@
   .browse-delete-btn:hover {
     opacity: 1;
   }
+/* Reset box-sizing i responsywność */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  #app {
+    width: 95vw;
+    height: 90vh;
+    padding: 0.5rem 0.8rem 0 0.8rem;
+  }
+
+  .card {
+    font-size: 1.6rem !important;
+    padding: 1.2rem 1.5rem 1.2rem 1rem !important;
+    margin: 0.6rem 0 !important;
+  }
+
+  #add-button {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    top: 8px;
+    right: 10px;
+  }
+
+  #browse-button, #export-import button {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  #export-import {
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  #click-area {
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+  }
+}
+
 
 </style>
 </head>
